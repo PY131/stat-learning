@@ -11,6 +11,7 @@ summary(college)
 # ii.
 pairs(college[,1:10])
 # iii.
+college$Private = as.factor(college$Private)
 plot(college$Private, college$Outstate)
 # iv.
 Elite = rep("No", nrow(college))
